@@ -1,9 +1,9 @@
 import React from "react";
 import { WeatherContainer } from "./WeatherContainer";
-
+import "../style.css";
 const App = () => {
   return (
-    <div>
+    <div className="main-app">
       <WeatherContainer />
     </div>
   );

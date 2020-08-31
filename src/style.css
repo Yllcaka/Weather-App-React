@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300;1,400&display=swap");
+
+body {
+  background-color: rgb(232, 247, 242);
+
+  font-family: Roboto;
+}
+
+.main-app {
+  display: flex;
+  justify-content: center;
+  color: rgb(7, 74, 78);
+}
+
+.weather-container {
+  border: 4px solid rgb(125, 187, 166);
+  background-color: rgb(183, 224, 210);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
+  width: 50%;
+}
+
+.search form {
+  display: flex;
+  flex-direction: row;
+}
+
+.search input {
+  flex: 2;
+  border: 4px solid rgb(125, 187, 166);
+  border-radius: 4px;
+  background-color: rgb(232, 247, 242);
+  margin-right: 5%;
+  color: rgb(7, 74, 78);
+  padding: 10px;
+}
+button {
+  flex: 1;
+  border: 4px solid rgb(125, 187, 166);
+  background-color: rgb(125, 187, 166);
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  border-color: rgb(148, 202, 184);
+  background-color: rgb(148, 202, 184);
+}
