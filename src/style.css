@@ -12,14 +12,20 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   height: 50px;
   padding: 0 5%;
   margin-bottom: 20px;
 }
-.main-nav * {
+.github-logo {
   height: 90%;
-  align-self: center;
-  /* color: ; */
+}
+.main-nav .logo,
+.main-nav .logo * {
+  height: 100%;
+}
+.app-title {
+  color: rgb(125, 187, 166);
 }
 .main-nav li {
   list-style-type: none;
@@ -27,6 +33,7 @@ body {
 .main-nav a {
   transition: 150ms;
 }
+
 .main-nav li:hover a {
   filter: brightness(0.9);
 }

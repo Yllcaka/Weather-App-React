@@ -17,6 +17,7 @@
     /* transform: translateX(20px); */
   }
 }
+
 @keyframes foot-tapping {
   from {
     transform: rotateZ(0deg) translateY(0px);
@@ -40,45 +41,6 @@
   transform-box: fill-box;
 }
 
-#snow1,
-#snow2,
-#snow3,
-#snow4,
-#snow5,
-#snow6,
-#snow7,
-#snow8,
-#snow9,
-#snow10 {
-  animation: snow-fall 1s infinite linear;
-}
-#snow1 {
-  animation-duration: 9s;
-}
-#snow2 {
-  animation-duration: 3s;
-}
-#snow3 {
-  animation-duration: 4s;
-}
-#snow4 {
-  animation-duration: 9s;
-}
-#snow5 {
-  animation-duration: 2s;
-}
-#snow6 {
-  animation-duration: 1s;
-}
-#snow7 {
-  animation-duration: 6s;
-}
-#snow8 {
-  animation-duration: 7s;
-}
-#snow9 {
-  animation-duration: 7s;
-}
-#snow10 {
-  animation-duration: 4s;
+[id^="snow"] {
+  animation: snow-fall 1s infinite ease-in-out;
 }
