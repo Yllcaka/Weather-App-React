@@ -2,11 +2,36 @@
 
 body {
   background-color: rgb(232, 247, 242);
-
+  margin: 0;
+  padding: 0;
   font-family: Roboto;
 }
 
-.main-app {
+.main-nav {
+  background-color: rgb(183, 224, 210);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 50px;
+  padding: 0 5%;
+  margin-bottom: 20px;
+}
+.main-nav * {
+  height: 90%;
+  align-self: center;
+  /* color: ; */
+}
+.main-nav li {
+  list-style-type: none;
+}
+.main-nav a {
+  transition: 150ms;
+}
+.main-nav li:hover a {
+  filter: brightness(0.9);
+}
+
+.main-app-container {
   display: flex;
   justify-content: center;
   color: rgb(7, 74, 78);
@@ -56,6 +81,7 @@ button {
   background-color: rgb(125, 187, 166);
   border-radius: 4px;
   cursor: pointer;
+  transition: 150ms;
 }
 button:hover {
   border-color: rgb(148, 202, 184);
