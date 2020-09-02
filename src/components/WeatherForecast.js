@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { TemperatureConverter } from "../logic/TemperatureConverter";
-import { ReactComponent as NotFound } from "../notFound.svg";
+import { ReactComponent as NotFound } from "../images/notFound.svg";
+import { ReactComponent as Searching } from "../images/searching.svg";
 const WeatherForecast = (props) => {
   const [isCelsius, setIsCelsius] = useState(true);
   let celsius, fahrenheit, weatherData;
@@ -38,14 +39,14 @@ const WeatherForecast = (props) => {
         </div>
       );
     } catch {
-      return <div>aaaaa</div>;
+      return (
+        <div style={{ width: "100%", display: "block" }}>
+          <NotFound style={{ width: "100%", display: "block" }} />
+        </div>
+      );
     }
   } else {
-    return (
-      <div style={{ width: "100%", display: "block" }}>
-        <NotFound style={{ width: "100%", display: "block" }} />
-      </div>
-    );
+    return <Searching />;
   }
 };
 

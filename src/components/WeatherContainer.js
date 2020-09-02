@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { SearchForm } from "./SearchForm";
 import WeatherForecast from "./WeatherForecast";
-import { ReactComponent as WeatherGirl } from "../weatherGirl.svg";
-import { SnowSpeed } from "../logic/SnowSpeed";
+import { ReactComponent as WeatherGirl } from "../images/weatherGirl.svg";
 import "../Animation.css";
 
 const WeatherContainer = () => {
@@ -13,7 +12,7 @@ const WeatherContainer = () => {
       <SearchForm change={setLocation} />
       <div className="weather-forecast">
         <WeatherForecast weather={location} />
-        <WeatherGirl style={{ width: "100%" }} onClick={SnowSpeed.bind(this)} />
+        <WeatherGirl />
       </div>
     </div>
   );

@@ -54,6 +54,9 @@ body {
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 1);
   width: 50%;
 }
+.weather-container svg {
+  height: 300px;
+}
 
 .search form {
   display: flex;

@@ -30,7 +30,7 @@
 }
 
 #clockHand {
-  animation: clock-hand 10s infinite linear;
+  animation: clock-hand 60s infinite linear;
   transform-origin: center;
   transform-box: fill-box;
 }

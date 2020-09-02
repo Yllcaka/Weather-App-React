@@ -5,9 +5,9 @@ const WeatherAPI = async (location) => {
 
   let locationData = await searchedLocation.json();
 
-  if (!locationData.weather)
-    return Promise.reject(`There isn't any info available for: 
-    "${location}"`);
+  // if (!locationData.weather)
+  //   return Promise.reject(`There isn't any info available for:
+  //   "${location}"`);
   return locationData;
 };
 
