@@ -12,7 +12,7 @@ const SearchForm = (props) => {
   useEffect(() => {
     //To change the visual component on each location change
     props.change(locationWeather);
-  }, [locationWeather]);
+  }, [locationWeather, props]);
   return (
     <div className="search">
       <form onSubmit={handleSubmit}>
