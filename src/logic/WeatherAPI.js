@@ -1,7 +1,10 @@
 const WeatherAPI = async (location) => {
   let searchedLocation = await fetch(
     `http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=9cc089968480c855113db238d65c31fe`,
-    { mode: "cors" }
+    {
+      mode: "cors",
+      redirect: "follow",
+    }
   );
 
   let locationData = await searchedLocation.json();
