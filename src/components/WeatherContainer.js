@@ -12,7 +12,9 @@ const WeatherContainer = () => {
       <SearchForm change={setLocation} />
       <div className="weather-forecast">
         <WeatherForecast weather={location} />
-        <WeatherGirl />
+        <div>
+          <WeatherGirl />
+        </div>
       </div>
     </div>
   );

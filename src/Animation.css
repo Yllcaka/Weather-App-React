@@ -7,6 +7,15 @@
   }
 }
 
+@keyframes question-mark {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(40deg);
+  }
+}
+
 @keyframes snow-fall {
   from {
     transform: translateY(0px);
@@ -43,4 +52,13 @@
 
 [id^="snow"] {
   animation: snow-fall 1s infinite ease-in-out;
+}
+[id^="question-mark"] {
+  animation: question-mark 2.5s infinite alternate;
+  transform-origin: center;
+  transform-box: fill-box;
+}
+
+svg:hover [id^="question-mark"] {
+  animation-play-state: paused;
 }
